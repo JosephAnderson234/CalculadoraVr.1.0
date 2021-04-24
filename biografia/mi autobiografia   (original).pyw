@@ -8,7 +8,6 @@ ventana = Tk()
 ventana.title("mi autobiografia")
 ventana.geometry("500x450")
 ventana.resizable(1,1)
-ventana.iconbitmap('Colegio_mayor_coar_logo.ico')
 
 #diviciones
 tab_control = ttk.Notebook(ventana)
