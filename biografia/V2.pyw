@@ -5,6 +5,9 @@ import tkinter as tk
 def Nventana():
     global root
     root = Tk()
+    root.geometry("300x300")
+    botonsalida = Button(root, text="quit", command = root.destroy)
+    botonsalida.pack()
     root.mainloop()
 
 ventana = Tk()
