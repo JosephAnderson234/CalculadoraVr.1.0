@@ -34,9 +34,9 @@ que pocos conosen y ahora tú, que\nlees esto los conozcas el esfuerzo de\nun in
 texto.insert(tk.END, mensaje)
 texto.configure(state='disabled')
 #imagenes
-imagen = ImageTk.PhotoImage(Image.open('download.jpg'))
-lbl = Label(tab1, image=imagen)
-lbl.pack()
+#imagen = ImageTk.PhotoImage(Image.open('download.jpg'))
+#lbl = Label(tab1, image=imagen)
+#lbl.pack()
 
 #Ahora el tab2
 #barrita y texto
@@ -54,12 +54,12 @@ soy un adolescente que busca crecer y madurar.Por cierto hoy recibi una\nnoticia
 texto2.insert(tk.END, mensaje2)
 texto2.configure(state='disabled')
 #Imagen
-imagen2 = ImageTk.PhotoImage(Image.open('x2.png').resize((170, 220)))
-lbl2 = Label(tab2, image=imagen2)
-lbl2.pack()
-imagen21 = ImageTk.PhotoImage(Image.open('x1.jpg').resize((220, 200)))
-lbl21 = Label(tab2, image=imagen21)
-lbl21.pack()
+#imagen2 = ImageTk.PhotoImage(Image.open('x2.png').resize((170, 220)))
+#lbl2 = Label(tab2, image=imagen2)
+#lbl2.pack()
+#imagen21 = ImageTk.PhotoImage(Image.open('x1.jpg').resize((220, 200)))
+#lbl21 = Label(tab2, image=imagen21)
+#lbl21.pack()
 
 #Y el tab3
 #barrita y texto
@@ -87,12 +87,12 @@ siento feliz de eso."""
 texto3.insert(tk.END, mensaje3)
 texto3.configure(state='disabled')
 #Imagen
-imagen3 = ImageTk.PhotoImage(Image.open('Colegio_mayor_coar_logo.png').resize((160, 160)))
-lbl3 = Label(tab3, image=imagen3)
-lbl3.pack()
-imagen31 = ImageTk.PhotoImage(Image.open('descarga.jpg'))
-lbl31 = Label(tab3, image=imagen31)
-lbl31.pack()
+#imagen3 = ImageTk.PhotoImage(Image.open('Colegio_mayor_coar_logo.png').resize((160, 160)))
+#lbl3 = Label(tab3, image=imagen3)
+#lbl3.pack()
+#imagen31 = ImageTk.PhotoImage(Image.open('descarga.jpg'))
+#lbl31 = Label(tab3, image=imagen31)
+#lbl31.pack()
 
 #Conten. tab4
 #Barrrita, texto

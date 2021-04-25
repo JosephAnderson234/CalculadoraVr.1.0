@@ -1,50 +1,8 @@
 from tkinter import *
+from fn.funciones import *
 from PIL import ImageTk, Image
 from tkinter import ttk
 import tkinter as tk
-def Gventana():
-    rootG = Tk()
-    rootG.iconbitmap(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\icono.ico')
-    rootG.geometry("300x300")
-    botonsalida = Button(rootG, text="quit", command = rootG.destroy, relief="groove")
-    botonsalida.pack()
-    rootG.mainloop()
-def Hventana():
-    rootH = Tk()
-    rootH.iconbitmap(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\icono.ico')
-    rootH.geometry("300x300")
-    botonsalida = Button(rootH, text="quit", command = rootH.destroy, relief="groove")
-    botonsalida.pack()
-    rootH.mainloop()
-def Aventana():
-    rootA = Tk()
-    rootA.iconbitmap(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\icono.ico')
-    rootA.geometry("300x300")
-    botonsalida = Button(rootA, text="quit", command = rootA.destroy, relief="groove")
-    botonsalida.pack()
-    rootA.mainloop()
-def Eventana():
-    rootE = Tk()
-    rootE.iconbitmap(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\icono.ico')
-    rootE.geometry("300x300")
-    botonsalida = Button(rootE, text="quit", command = rootE.destroy, relief="groove")
-    botonsalida.pack()
-    rootE.mainloop()
-def Cventana():
-    rootC = Tk()
-    rootC.iconbitmap(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\icono.ico')
-    rootC.geometry("300x300")
-    botonsalida = Button(rootC, text="quit", command = rootC.destroy, relief="groove")
-    botonsalida.pack()
-    rootC.mainloop()
-def Nventana():
-    rootN = Tk()
-    rootN.iconbitmap(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\icono.ico')
-    rootN.geometry("300x300")
-    botonsalida = Button(rootN, text="quit", command = rootN.destroy, relief="groove")
-    botonsalida.pack()
-    rootN.mainloop()
-
 ventana = Tk()
 ventana.title("Mi autobiografía")
 ventana.iconbitmap(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\icono.ico')
