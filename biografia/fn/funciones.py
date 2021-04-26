@@ -4,6 +4,7 @@ from tkinter import ttk
 import tkinter as tk
 def Nventana():
     rootN = Tk()
+    rootN.title("Nacimiento")
     rootN.iconbitmap(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\icono.ico')
     rootN.geometry("400x400")
     mensaje =  """Bueno, yo nací en San Vicente
