@@ -17,23 +17,23 @@ font=("Cooper Black", 15), bg="green yellow", fg="firebrick")
 botonNacimiento.place(x=40, y=120, width=200, height=120)
 
 botonCrecimiento = Button(ventana, text="Crecimiento", command=Cventana, relief="groove",
-font=("Cooper Black", 15))
+font=("Cooper Black", 15), bg="green yellow", fg="firebrick")
 botonCrecimiento.place(x=40, y=280, width=200, height=120)
 
 botonEscuela = Button(ventana, text="Escuela", command=Eventana, relief="groove",
-font=("Cooper Black", 15))
+font=("Cooper Black", 15), bg="green yellow", fg="firebrick")
 botonEscuela.place(x=40, y=440, width=200, height=120)
 
 botonAspiraciones = Button(ventana, text="Aspiraciones", command=Aventana, relief="groove",
-font=("Cooper Black", 15))
+font=("Cooper Black", 15), bg="green yellow", fg="firebrick")
 botonAspiraciones.place(x=320, y=120, width=200, height=120)
 
 botonHabilidades = Button(ventana, text="Habiliades", command=Hventana, relief="groove",
-font=("Cooper Black", 15))
+font=("Cooper Black", 15), bg="green yellow", fg="firebrick")
 botonHabilidades.place(x=320, y=280, width=200, height=120)
 
 botonGustos = Button(ventana, text="Crecimiento", command=Gventana, relief="groove",
-font=("Cooper Black", 15))
+font=("Cooper Black", 15), bg="green yellow", fg="firebrick")
 botonGustos.place(x=320, y=440, width=200, height=120)
 
 ventana.mainloop()
