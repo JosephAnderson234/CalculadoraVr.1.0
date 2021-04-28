@@ -110,6 +110,7 @@ def Aventana():
     rootA = Tk()
     rootA.iconbitmap(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\icono.ico')
     rootA.geometry("500x400")
+    rootA.title("Aspiraciones")
     rootA.configure(bg="red")
     mensaje =  """Bueno llegamos a la parte donde
 hablamos de mis metas a futuro,
@@ -140,14 +141,83 @@ para el futuro de mi descendencia."""
 def Hventana():
     rootH = Tk()
     rootH.iconbitmap(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\icono.ico')
-    rootH.geometry("300x300")
-    botonsalida = Button(rootH, text="quit", command = rootH.destroy, relief="groove")
-    botonsalida.pack()
+    rootH.geometry("500x400")
+    rootH.title("Habilidades")
+    rootH.configure(bg="red")
+    mensaje =  """Ok, ahora entramos al terreno de mis
+habilidades, aunque ustedes piensen
+que solo programo tambien me gusta
+escribir además de usar la
+computadora de manera eficiente, a
+por cierto soy bueno apra las
+matemáticas, asi que si tienen
+dudas, fuera de la hoar de clase,
+solo me avisan con gusto les echo
+una mano."""
+    imagen = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\programación.png').resize((220,110)),
+     master=rootH)
+    labl = Label(rootH, image=imagen, bg="red")
+    texto = Text(rootH, font=("Arial", 13 ), bg="yellow")
+    labl.place(x=280, y=80, width=220, height=200)
+    texto.place(x=0, y=0, width=280, height=320)
+    texto.insert(tk.END, mensaje)
+    texto.configure(state='disabled')
+    botonsalida = Button(rootH, text="quit", command = rootH.destroy,
+    relief="groove", font=("Cooper Black", 15), bg="tan", fg="red")
+    botonsalida.place(x=120, y=320, width=160, height=80)
     rootH.mainloop()
 def Gventana():
+    def retroceder():
+        texto.configure(state='normal')
+        texto.delete("1.0","end")
+        texto.insert(tk.END, mensajes[0])
+    def completar():
+        texto.configure(state='normal')
+        texto.delete("1.0","end")
+        texto.insert(tk.END, mensajes[1])
+        texto.configure(state='disabled')
+        botonXP = Button(rootG, text="<=", command=retroceder,
+        relief="groove", font=("Cooper Black", 15), bg="tan", fg="red")
+        botonXP.place(x=0, y=320, width=160, height=80)
+
     rootG = Tk()
     rootG.iconbitmap(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\icono.ico')
-    rootG.geometry("300x300")
-    botonsalida = Button(rootG, text="quit", command = rootG.destroy, relief="groove")
-    botonsalida.pack()
+    rootG.geometry("400x400")
+    rootG.title("Gustos")
+    rootG.configure(bg="red")
+    mensaje =  """Bueno ahora hablemos de mis gustos
+personales, en lo básico me gusta las
+computadoras creo que desde cumplí
+12, fue algo repentino; pero
+dejando de lado eso,tambien me
+gusta leer,de echo ahí me
+entretengo más que en otras
+cosas,además hace pocos meses me
+empezó a gustar pintar(OJO: pintar
+no es lo mismo que dibujar) por si
+me olvidaba tambien me gusta
+escribir, lo considero un
+pasatiempo reflexivo y puro.
+Bueno no tengo otra cosa más quye
+decir. Bueno creo que eso es todo."""
+    mensaje2 = """Gracias por tu tiempo. Bye :-)"""
+    mensajes = [mensaje, mensaje2]
+    imagen = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\libros.jpg').resize((120,110)),
+     master=rootG)
+    labl = Label(rootG, image=imagen, bg="red")
+    labl.place(x=280, y=0, width=120, height=200)
+    imagen2 = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\compu.jpg').resize((120,110)),
+     master=rootG)
+    labl2 = Label(rootG, image=imagen2, bg="red")
+    labl2.place(x=280, y=160, width=120, height=200)
+    texto = Text(rootG, font=("Arial", 13 ), bg="yellow")
+    texto.place(x=0, y=0, width=280, height=320)
+    texto.insert(tk.END, mensajes[0])
+    texto.configure(state='disabled')
+    botonsalida = Button(rootG, text="quit", command = rootG.destroy,
+    relief="groove", font=("Cooper Black", 15), bg="tan", fg="red")
+    botonsalida.place(x=120, y=320, width=160, height=80)
+    botonsiguiente = Button(rootG, text="=>", command = completar,
+    relief="groove", font=("Cooper Black", 15), bg="tan", fg="red")
+    botonsiguiente.place(x=280, y=320, width=120, height=80)
     rootG.mainloop()

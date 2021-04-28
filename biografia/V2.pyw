@@ -32,7 +32,7 @@ botonHabilidades = Button(ventana, text="Habiliades", command=Hventana, relief="
 font=("Cooper Black", 15), bg="green yellow", fg="firebrick")
 botonHabilidades.place(x=320, y=280, width=200, height=120)
 
-botonGustos = Button(ventana, text="Crecimiento", command=Gventana, relief="groove",
+botonGustos = Button(ventana, text="Gustos", command=Gventana, relief="groove",
 font=("Cooper Black", 15), bg="green yellow", fg="firebrick")
 botonGustos.place(x=320, y=440, width=200, height=120)
 
