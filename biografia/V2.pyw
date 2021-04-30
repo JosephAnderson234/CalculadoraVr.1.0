@@ -36,4 +36,8 @@ botonGustos = Button(ventana, text="Gustos", command=Gventana, relief="groove",
 font=("Cooper Black", 15), bg="green yellow", fg="firebrick")
 botonGustos.place(x=320, y=440, width=200, height=120)
 
+botonsalida = Button(ventana, text="QUIT", command=ventana.destroy, relief="groove",
+font=("Cooper Black", 15), bg="green yellow", fg="red")
+botonsalida.place(x=240, y=560)
+
 ventana.mainloop()

@@ -2,6 +2,9 @@ from tkinter import *
 from PIL import ImageTk, Image
 from tkinter import ttk
 import tkinter as tk
+from fn.función_música import create_reproducctor
+from pygame import mixer 
+mixer.init()
 def Nventana():
     rootN = Tk()
     rootN.title("Nacimiento")
@@ -21,7 +24,7 @@ Pero no dejemos que eso arruine la
 experiencia, ¿vale?"""
     imagen = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\x2.png').resize((120,150)),
      master=rootN)
-    imagen2 = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\x1.jpg').resize((120,120)),
+    imagen2 = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\x1.png').resize((120,120)),
      master=rootN)
     labl = Label(rootN, image=imagen, bg="red")
     labl.place(x=280, y=0, width=120, height=200)
@@ -53,9 +56,9 @@ demás me empeze a preocupar a los
 pequeño estadio de mi barrio. Por
 eso te digo que tuve un crecimiento
 muy buena. :-)"""
-    imagen = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\crecimientoT.jpg').resize((120,200)),
+    imagen = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\crecimientoT.png').resize((120,200)),
      master=rootC)
-    imagen2 = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\AF.jpg').resize((120,120)),
+    imagen2 = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\AF.png').resize((120,120)),
      master=rootC)
     labl = Label(rootC, image=imagen, bg="red")
     labl.place(x=280, y=0, width=120, height=200)
@@ -92,7 +95,7 @@ serio estar en la secundaria
 me cambio la vida"""
     imagen = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\Colegio_mayor_coar_logo.png').resize((120,120)),
      master=rootE)
-    imagen2 = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\descarga.jpg').resize((120,200)),
+    imagen2 = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\descarga.png').resize((120,200)),
      master=rootE)
     labl = Label(rootE, image=imagen, bg="red")
     labl.place(x=280, y=0, width=120, height=200)
@@ -126,7 +129,7 @@ una familia muy humilde llena de
 valores y profundo cariño, ya que
 del fruto del trabajo lo utilizare
 para el futuro de mi descendencia."""
-    imagen = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\inicio.jpg').resize((220,110)),
+    imagen = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\inicio.png').resize((220,110)),
      master=rootA)
     labl = Label(rootA, image=imagen, bg="red")
     labl.place(x=280, y=80, width=220, height=200)
@@ -165,6 +168,9 @@ una mano."""
     botonsalida = Button(rootH, text="quit", command = rootH.destroy,
     relief="groove", font=("Cooper Black", 15), bg="tan", fg="red")
     botonsalida.place(x=120, y=320, width=160, height=80)
+    Bejemplo = Button(rootH, text="abre Mini\nreproductor", command=create_reproducctor,
+    relief="groove", font=("Cooper Black", 14), bg="tan", fg="red")
+    Bejemplo.place(x=0, y=320, width=120, height=80)
     rootH.mainloop()
 def Gventana():
     def retroceder():
@@ -202,11 +208,11 @@ Bueno no tengo otra cosa más quye
 decir. Bueno creo que eso es todo."""
     mensaje2 = """Gracias por tu tiempo. Bye :-)"""
     mensajes = [mensaje, mensaje2]
-    imagen = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\libros.jpg').resize((120,110)),
+    imagen = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\libros.png').resize((120,110)),
      master=rootG)
     labl = Label(rootG, image=imagen, bg="red")
     labl.place(x=280, y=0, width=120, height=200)
-    imagen2 = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\compu.jpg').resize((120,110)),
+    imagen2 = ImageTk.PhotoImage(Image.open(r'C:\Users\Usuario\Documents\GitHub\CalculadoraVr.1.0\biografia\compu.png').resize((120,110)),
      master=rootG)
     labl2 = Label(rootG, image=imagen2, bg="red")
     labl2.place(x=280, y=160, width=120, height=200)
